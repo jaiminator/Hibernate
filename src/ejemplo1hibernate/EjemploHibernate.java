@@ -28,5 +28,7 @@ public class EjemploHibernate {
         sessionFactory = configuration.buildSessionFactory(serviceRegistry);
         
         Session session = sessionFactory.openSession();
+        
+        session.close();
     }
 }
